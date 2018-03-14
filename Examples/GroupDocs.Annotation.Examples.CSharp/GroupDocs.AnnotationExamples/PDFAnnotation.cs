@@ -35,14 +35,15 @@ namespace GroupDocs.Annotation.CSharp
                     PageNumber = 0,
                     SvgPath = "[{\"x\":265.44,\"y\":388.83},{\"x\":472.19,\"y\":388.83},{\"x\": 265.44,\"y\":349.14},{\"x\":472.19,\"y\":349.14}]",
                     Type = AnnotationType.Text,
-                    CreatorName = "Anonym A."
+                    CreatorName = "Anonym A.",
+                    
                 };
 
                 // Add annotation to list
                 annotations.Add(textAnnotation);
 
                 // Export annotation and save output file
-                CommonUtilities.SaveOutputDocument(inputFile, annotations, DocumentType.Words);
+                CommonUtilities.SaveOutputDocument(inputFile, annotations, DocumentType.Pdf);
                 //ExEnd:AddTextAnnotation
             }
             catch (System.Exception exp)
@@ -92,7 +93,8 @@ namespace GroupDocs.Annotation.CSharp
                     PenStyle = 1,
                     PenWidth = 1,
                     Type = AnnotationType.Area,
-                    CreatorName = "Anonym A."
+                    CreatorName = "Anonym A.",
+                    
                 };
                 // Add annotation to list
                 annotations.Add(areaAnnnotation);
